@@ -1,0 +1,43 @@
+aid: homethrive
+url: https://raw.githubusercontent.com/api-evangelist/homethrive/refs/heads/main/apis.yml
+name: Homethrive
+kind: company
+description: Homethrive is a technology-enabled caregiving-support benefit sold to
+  employers, health plans, financial institutions, ancillary insurers, brokers, and
+  platform partners. It pairs a digital assistant (Homethrive Dari) with human Care
+  Guides to help family caregivers navigate backup care, aging, complex health,
+  estate planning, and loss for their loved ones. Homethrive is a B2B2C member
+  platform - it is delivered to covered members through their employer or health
+  plan, not as a self-serve product. There is no public or partner developer API,
+  API reference, or developer portal. Customer integration is handled during
+  enterprise onboarding via an eligibility-file specification (typically SFTP/CSV
+  batch files) and Single Sign-On (SSO), with utilization and engagement data
+  returned to the sponsor - all arranged through implementation, not a documented
+  self-service API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Caregiving
+- Family Caregivers
+- Employee Benefits
+- Health Plans
+- Eldercare
+- Backup Care
+- Caregiver Support
+- Digital Health
+- B2B2C
+- No Public API
+created: '2026-07-03'
+modified: '2026-07-03'
+specificationVersion: '0.19'
+common:
+- type: Website
+  url: https://homethrive.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/homethrive-inc
+- type: Blog
+  url: https://homethrive.com/blog/
+- type: SignUp
+  url: https://homethrive.com/eligible-members/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

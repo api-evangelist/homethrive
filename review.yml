@@ -1,0 +1,112 @@
+aid: homethrive
+name: Homethrive
+review:
+  question: Does Homethrive expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-03'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Homethrive publishes no public developer
+    API of any kind - REST, GraphQL, webhook, Server-Sent Events, or WebSocket -
+    so there is no server-push transport on a Homethrive-owned API surface to
+    model. Homethrive is a B2B2C caregiving-support benefit delivered to covered
+    members through an employer or health plan. Any data movement (member
+    eligibility in, utilization/engagement reporting out) happens through
+    enterprise onboarding via an eligibility-file specification (SFTP/CSV batch
+    files) and SSO, not through a documented, versioned, self-service API.
+findings:
+  summary: |
+    Homethrive does not publish a documented public WebSocket API. In fact,
+    Homethrive publishes no public or partner developer API at all. Homethrive
+    is a technology-enabled caregiving-support benefit (digital assistant "Dari"
+    plus human Care Guides) sold to employers, health plans, financial
+    institutions, ancillary insurers, brokers, and platform partners, and made
+    available to their covered members. There is no developer portal, no API
+    reference, no OpenAPI/AsyncAPI document, no SDK, and no self-service sign-up
+    for API credentials. Members reach Homethrive through their sponsor's
+    benefits experience (for example an "Additional Benefits" tile) with SSO,
+    and sponsors send member data via an eligibility-file specification
+    (commonly SFTP or CSV) established during implementation. Homethrive returns
+    utilization and engagement data to the sponsor for outcome measurement.
+    These are private, contract-scoped integrations arranged during enterprise
+    onboarding - not a documented public API. No REST, GraphQL, webhook, SSE, or
+    WebSocket (ws:// or wss://) endpoint is published anywhere on Homethrive's
+    web properties as of the review date.
+  openSource: |
+    None found. Homethrive is a proprietary commercial caregiving-support
+    platform. No public GitHub organization, open-source repositories, or
+    self-hostable components were identified.
+  accessModel: |
+    B2B2C, enterprise-gated. Homethrive is purchased by an employer, health
+    plan, or other sponsor and offered to that sponsor's members/employees.
+    Individuals cannot buy or self-provision Homethrive, and developers cannot
+    self-provision API access. Technical connectivity is limited to eligibility
+    ingestion and SSO configured during onboarding.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API or API reference is published on any Homethrive property.
+    - protocol: GraphQL
+      scheme: https
+      documented: false
+      note: No GraphQL endpoint or schema is published.
+    - protocol: Webhook
+      scheme: https
+      documented: false
+      note: No outbound webhook product is documented for third-party developers.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere on Homethrive's properties as of the review date.
+  integrationSurfaces:
+    - name: Eligibility file
+      documented: false
+      note: >
+        Sponsors send member eligibility via an eligibility-file specification
+        (typically SFTP/CSV batch), established during enterprise onboarding.
+        Not a public, self-service API.
+    - name: Single Sign-On (SSO)
+      documented: false
+      note: >
+        Members access Homethrive's portal via SSO from the sponsor's benefits
+        experience. Configured per-customer during implementation; no public
+        developer documentation.
+    - name: Reporting
+      documented: false
+      note: >
+        Utilization and engagement data are returned to the sponsor for outcome
+        measurement. Delivered contractually, not via a documented API.
+  endpointsModeled: none
+  endpointsConfirmedRest: []
+sources:
+  - url: https://homethrive.com/
+    type: Website
+    note: Marketing homepage. Lists customer segments (employers, health plans, financial institutions, ancillary insurers, brokers, platform partners). No developer/API footer links.
+  - url: https://homethrive.com/employers/
+    type: Website
+    note: Employer offering. Benefit for employees caring for children, aging parents, and complex family needs. No API.
+  - url: https://homethrive.com/health-plans/
+    type: Website
+    note: Health-plan offering. Care Guides integrated with existing care-management programs. No API.
+  - url: https://homethrive.com/eligible-members/
+    type: Website
+    note: Member access page. Access is granted through a sponsoring employer or health plan.
+  - url: https://collectivehealth.com/partner-collective/homethrive/
+    type: Reference
+    note: Partner listing describing the real integration model - eligibility-file spec, SSO login, and utilization/engagement data returned to the sponsor.
+  - url: https://www.linkedin.com/company/homethrive-inc
+    type: LinkedIn
+    note: Company profile.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket protocol surface exists, and Homethrive exposes no public or
+    partner developer API of any kind. Homethrive is documented in this catalog
+    as an honest stub: a B2B2C caregiving-support benefit whose only technical
+    connectivity (eligibility files and SSO) is arranged privately during
+    enterprise onboarding. No AsyncAPI or OpenAPI document was created because
+    there is no documented public API surface to model, and no endpoints were
+    modeled or fabricated.
