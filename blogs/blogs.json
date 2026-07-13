@@ -1,0 +1,21 @@
+{
+  "repo": "homethrive",
+  "feeds": [
+    {
+      "source": "https://homethrive.com/resources/?resource_type=post",
+      "feed_url": "https://homethrive.com/resources/?resource_type=post",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.linkedin.com/company/homethrive-inc",
+      "feed_url": "https://www.linkedin.com/company/homethrive-inc",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 5
+}
