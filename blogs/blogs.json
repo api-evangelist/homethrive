@@ -6,16 +6,18 @@
       "feed_url": "https://homethrive.com/resources/?resource_type=post",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://www.linkedin.com/company/homethrive-inc",
       "feed_url": "https://www.linkedin.com/company/homethrive-inc",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
-  "fetched": "2026-08-06T14:08:46Z",
+  "fetched": "2026-08-15T12:11:08Z",
   "post_count": 5
 }
