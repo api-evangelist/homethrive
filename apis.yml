@@ -14,6 +14,17 @@ description: Homethrive is a technology-enabled caregiving-support benefit sold 
   batch files) and Single Sign-On (SSO), with utilization and engagement data
   returned to the sponsor - all arranged through implementation, not a documented
   self-service API.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
