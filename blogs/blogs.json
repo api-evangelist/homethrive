@@ -2,23 +2,21 @@
   "repo": "homethrive",
   "feeds": [
     {
-      "source": "https://homethrive.com/resources/?resource_type=post",
-      "feed_url": "https://homethrive.com/resources/?resource_type=post",
-      "title": "",
-      "saved": 0,
-      "method": "none",
-      "nature": "vendor-blog",
-      "nature_basis": "path_blog"
-    },
-    {
       "source": "https://www.linkedin.com/company/homethrive-inc",
       "feed_url": "https://www.linkedin.com/company/homethrive-inc",
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://homethrive.com/resources/?resource_type=post",
+      "feed_url": "https://homethrive.com/resources/?resource_type=post",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-08-30T22:33:40Z",
+  "fetched": "2026-09-06T19:17:18Z",
   "post_count": 5,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
