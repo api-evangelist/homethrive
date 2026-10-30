@@ -1,4 +1,4 @@
-# Homethrive (homethrive)
+# Homethrive
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,61 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Homethrive is a technology-enabled caregiving-support benefit that pairs a digital assistant (Homethrive "Dari") with human Care Guides to help family caregivers navigate backup care, aging, complex health, estate planning, and loss for their loved ones. It is sold to employers, health plans, financial institutions, ancillary insurers, brokers, and platform partners, and delivered to those sponsors' covered members.
+Homethrive is a technology-enabled caregiving-support benefit sold to employers, health plans, financial institutions, ancillary insurers, brokers, and platform partners. It pairs a digital assistant (Homethrive Dari) with human Care Guides to help family caregivers navigate backup care, aging, complex health, estate planning, and loss for their loved ones. Homethrive is a B2B2C member platform - it is delivered to covered members through their employer or health plan, not as a self-serve product. There is no public or partner developer API, API reference, or developer portal. Customer integration is handled during enterprise onboarding via an eligibility-file specification (typically SFTP/CSV batch files) and Single Sign-On (SSO), with utilization and engagement data returned to the sponsor - all arranged through implementation, not a documented self-service API.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/homethrive/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/homethrive/refs/heads/main/apis.yml)
+**Areas:** Caregiving · Family Caregivers · Employee Benefits · Health Plans · Elder Care · Back-Up Care · Caregiver Support · Digital Health · B2B2C
 
-## API Status: No Public API
+## Homethrive on APIs.io
 
-Homethrive does **not** publish a public or partner developer API. As of this review (2026-07-03) there is:
+Everything profiled for Homethrive is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/homethrive/](https://apis.io/providers/homethrive/)** — or go straight to one of the APIs or properties below.
 
-- No developer portal or API reference
-- No OpenAPI, AsyncAPI, GraphQL, webhook, SSE, or WebSocket surface
-- No SDK, CLI, or self-service sign-up for API credentials
-- No public GitHub organization or open-source components
+### Published properties
 
-This is expected for the product. Homethrive is a **B2B2C, enterprise-gated benefit**: an employer or health plan buys it and offers it to their members. Individuals cannot self-provision it, and developers cannot self-provision access to it.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### How Homethrive actually integrates
+#### Security (1)
 
-Connectivity is handled privately during enterprise onboarding, not through a documented public API:
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Eligibility file** — sponsors send member eligibility using an eligibility-file specification, typically over SFTP as batch CSV files.
-- **Single Sign-On (SSO)** — members reach Homethrive's portal via SSO from the sponsor's benefits experience (for example an "Additional Benefits" tile in a health-plan portal).
-- **Reporting** — Homethrive returns utilization and engagement data to the sponsor to measure clinical and financial outcomes.
+- [Homethrive Domain Security](https://apis.io/security/homethrive/homethrive-domain-security/)
 
-These are contract-scoped integrations arranged during implementation. They are documented here honestly as an integration model, not as public API endpoints, and no endpoints have been modeled or fabricated.
+## Where to find this API
 
-## Tags
-
-- Caregiving
-- Family Caregivers
-- Employee Benefits
-- Health Plans
-- Eldercare
-- Backup Care
-- Caregiver Support
-- Digital Health
-- B2B2C
-- No Public API
-
-## Timestamps
-
-- **Created:** 2026-07-03
-- **Modified:** 2026-07-03
-
-## Pricing
-
-Homethrive is sold through enterprise B2B contracts (per-employee-per-month or population-based pricing negotiated with the sponsoring employer or health plan). Pricing is not published, and there is no API pricing because there is no API product. Access for individuals is free at the point of use when it is offered through their employer or health plan.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://homethrive.com)
-- [LinkedIn](https://www.linkedin.com/company/homethrive-inc)
+- [Sign up](https://homethrive.com/eligible-members/)
 - [Blog](https://homethrive.com/blog/)
-- [Sign Up (Eligible Members)](https://homethrive.com/eligible-members/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 6.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 13.2 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/homethrive/](https://apis.io/providers/homethrive/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Homethrive: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/homethrive/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
